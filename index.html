@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Collect Weapons | Zelda</title>
+
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  	<!-- Linking to the Google Fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Almendra|Oxygen" rel="stylesheet">
+
+  </head>
+  <body>
+
+  	<header>
+  		<div id="headerContainer">
+		  	<h1>Zelda Weapon Inventory Collection</h1>
+		</div>
+	</header>
+
+	<!-- Game word section; displays the dashes and letters that were guessed right -->
+		<section id="directions">
+			<h2 class="directionsToggle">Directions&nbsp;&nbsp;&#9661;</h2>
+			<ul>
+				<br />
+				<li>You will be given a random number at the start of the game.</li>
+				<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+				<li>You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</li>
+				<li>The value of each crystal is hidden from you until you click on it.</li>
+				<li>Each time the game starts, the random number changes along with the value of each crystal.</li>
+		</section>
+
+	<div id="gameContainer">
+		<!-- Target score, number of losses & wins, and your score -->
+		<section id="game">
+			<img src="assets/images/bkg_zelda.jpg" class="gameBackground" alt="Zelda Game Background" title="Zelda Game Background" />
+			<div id="objects">
+				<div id="object1" class="objectBtn"><img src="assets/images/img_masterSword.png" alt="Master Sword" title="Master Sword" /></div>
+				<div id="object2" class="objectBtn"><img src="assets/images/img_demonCarver.png" alt="Demon Carver" ttile="Demon Carv class="objectBtn"er" /></div>
+				<div id="object3" class="objectBtn"><img src="assets/images/img_guardianSword.png" alt="Guardian Sword" title="Guardian Sword" /></div>
+				<div id="object4" class="objectBtn"><img src="assets/images/img_meteorRod.png" alt="Meteor Rod" title="Meteor Rod" /></div>
+			</div>
+			<div class="scoreContainer">
+				<div class="score leftContainer">
+					<h4>Target score:</h4>
+					<h1 id="targetScore">0</h1>
+				</div>
+				<div class="score">
+					<h4>Your total score is:</h4>
+					<h1 id="yourScore">test</h1>
+				</div>
+			</div>
+			<div class="gameCount">
+				<h3>Wins: <span id="wins">0</span></h3>
+				<h3>Losses: <span id="losses">0</span></h3>
+			</div>
+		</section>
+	</div>
+	<!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+	<script src="assets/js/game.js"></script>
+
+  </body>
+</html>

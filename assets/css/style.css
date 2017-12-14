@@ -1,0 +1,138 @@
+body {
+	background:#000000;
+	font-family: 'Oxygen', san-serif;
+	width:100%;
+	height:100vh;
+	color:#ffffff;
+}
+/* Header CSS */
+header {
+	width:100%;
+	padding:20px 0;
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+	margin:0 0 10px 0;
+}
+
+header #headerContainer {
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+}
+
+header h1 {
+	font-family: 'Almendra', serif;
+	font-size: 60px;
+	color:#ffffff;
+	margin:0 0 20px 0;
+	border-bottom:2px solid #ffffff;
+}
+
+header h2 {
+	font-size: 20px;
+	font-weight:bold;
+}
+
+/* Game Directions */
+
+#directions {
+	color:#ffffff;
+	width:65%;
+	margin:0 auto 30px auto;
+	background: #71746b;
+	padding:20px;
+}
+.directionsToggle {
+	cursor: pointer;
+}
+#directions h2 {
+	font-size:25px;
+}
+#directions ul {
+	display:none;
+	list-style-type:circle;
+	padding:0 0 0 25px;
+}
+#directions ul li {
+	font-size:20px;
+	margin:0 0 10px;
+}
+
+/* Game Background/Container */
+#gameContainer {
+	max-width:1280px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+#game .gameBackground img {
+	max-width:1280px;
+	width:100%;
+	margin:0 auto;
+	z-index:-1;
+}
+#objects {
+	position:absolute;
+	z-index:1;
+	top:250px;
+	left:150px;
+	max-width:660px;
+	max-height:390px;
+}
+.objectBtn {
+	width:125px;
+	float:left;
+	margin:0 13px;
+}
+.objectBtn img {
+	width:105px;
+	background:#474747;
+	border:1px solid #000000;
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+	border-radius:10px;
+	padding:10px;
+	cursor:pointer;
+}
+.scoreContainer {
+	position:absolute;
+	top:425px;
+	left:150px;
+	max-width:660px;
+}
+.score {
+	float:left;
+	width:255px;
+	padding:20px;
+	background:#ffffff;
+	opacity:.5;
+	text-align:center;
+}
+.leftContainer {
+	margin-right:20px;
+}
+.score h4 {
+	color:#000000;
+	font-size:26px;
+	border-bottom:1px solid #000000;
+	margin:0 0 10px 0;
+}
+.score h1 {
+	color:#000000;
+	font-size:40px;
+	font-weight:bold;
+}
+.gameCount {
+	position:absolute;
+	top:20px;
+	left:250px;
+}
+.gameCount h3 {
+	font-size:25px;
+	margin:0 0 10px 0;
+}
+.gameCount span#wins, .gameCount span#losses {
+	font-weight:bold;
+}
